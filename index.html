@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댕댕감자의 꿈 이야기</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Noto Sans KR & Gaegu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warmYellow: '#FFF4D2',
+                        pastelOrange: '#FFD3B6',
+                        warmBrown: '#6B4F4F',
+                        accentPink: '#FFAAA5',
+                        accentGreen: '#A8E6CF'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                        cute: ['Gaegu', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFF4D2 0%, #FFD3B6 50%, #FFAAA5 100%);
+            min-height: 100vh;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(107, 79, 79, 0.15), 0 8px 10px -6px rgba(107, 79, 79, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-warmBrown p-4 sm:p-8">
+
+    <div class="max-w-2xl mx-auto bg-white/90 backdrop-blur-sm rounded-3xl card-shadow overflow-hidden border-4 border-white">
+        
+        <!-- 상단 헤더 이미지 영역 (책을 읽고 있는 도서관 일러스트) -->
+        <div class="relative w-full bg-amber-50">
+            <img 
+                src="http://googleusercontent.com/image_generation_content/4_552" 
+                alt="도서관에서 아늑한 소파에 앉아 독서하고 있는 따뜻한 감성의 일러스트" 
+                class="w-full h-auto object-cover max-h-[380px]"
+                onerror="this.src='https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1000&q=80'; this.onerror=null;"
+            >
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-white via-white/70 to-transparent h-16"></div>
+        </div>
+
+        <!-- 메인 프로필 콘텐츠 -->
+        <div class="px-6 sm:px-10 pb-10 pt-2">
+            
+            <!-- 타이틀 / 이름 헤더 -->
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1.5 bg-accentPink/30 text-warmBrown font-cute text-xl rounded-full mb-2 font-bold transform -rotate-1">
+                    ✨ 미래의 멋진 작가를 꿈꾸는
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-bold font-cute text-warmBrown tracking-wide">
+                    댕댕감자의 꿈 페이지 🥔
+                </h1>
+            </div>
+
+            <!-- 프로필 카드 그리드 -->
+            <div class="space-y-6">
+
+                <!-- 1. 되고 싶은 것 -->
+                <div class="bg-warmYellow/60 border-2 border-amber-200/60 rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02]">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-xl bg-amber-400 text-white flex items-center justify-center text-xl shadow-sm">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-warmBrown">나의 꿈 (되고 싶은 것)</h2>
+                    </div>
+                    <p class="text-lg font-semibold text-amber-900 pl-13 sm:pl-13">
+                        "멋있는 작가가 되고 싶어요! ✍️"
+                    </p>
+                    <p class="text-sm text-warmBrown/80 mt-1 pl-13">
+                        사람들에게 따뜻한 울림과 즐거움을 줄 수 있는 이야기를 써내려가는 멋진 작가를 꿈꿉니다.
+                    </p>
+                </div>
+
+                <!-- 2. 탐구하는 방법 -->
+                <div class="bg-emerald-50 border-2 border-emerald-200/60 rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02]">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-400 text-white flex items-center justify-center text-xl shadow-sm">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-warmBrown">꿈을 향해 탐구하는 방법</h2>
+                    </div>
+                    <p class="text-lg font-semibold text-emerald-900">
+                        📖 책을 읽으면서 글로 마음을 표현하기
+                    </p>
+                    <p class="text-sm text-warmBrown/80 mt-1">
+                        다양한 책을 읽으며 좋은 문장과 세상을 익히고, 생각과 감정을 글 쓰는 연습을 통해 계속 넓혀가고 있어요.
+                    </p>
+                </div>
+
+                <!-- 3. 관심 있는 문제 -->
+                <div class="bg-rose-50 border-2 border-rose-200/60 rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02]">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-xl bg-rose-400 text-white flex items-center justify-center text-xl shadow-sm">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-warmBrown">가장 관심 있는 분야</h2>
+                    </div>
+                    <p class="text-lg font-semibold text-rose-900">
+                        📺 TV 드라마 작가 되기
+                    </p>
+                    <p class="text-sm text-warmBrown/80 mt-1">
+                        많은 사람들이 모여 울고 웃으며 공감할 수 있는 따뜻하고 생동감 넘치는 TV 드라마 스토리를 만들어보고 싶습니다.
+                    </p>
+                </div>
+
+                <!-- 4. 나의 스킬 & 장점 -->
+                <div class="bg-sky-50 border-2 border-sky-200/60 rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-400 text-white flex items-center justify-center text-xl shadow-sm">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-warmBrown">나의 대표 스킬 & 장점</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+                        <div class="bg-white/80 p-3 rounded-xl border border-sky-100 shadow-sm">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-lg">💡</span>
+                                <span class="font-bold text-sky-900 text-sm">반짝이는 상상력</span>
+                            </div>
+                            <p class="text-xs text-warmBrown/80">일상 속에서 재미있는 이야기와 상황을 연상하는 능력</p>
+                        </div>
+                        <div class="bg-white/80 p-3 rounded-xl border border-sky-100 shadow-sm">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-lg">🔍</span>
+                                <span class="font-bold text-sky-900 text-sm">섬세한 관찰력</span>
+                            </div>
+                            <p class="text-xs text-warmBrown/80">주변 사람들의 표정과 감정, 말을 깊이 관찰하기</p>
+                        </div>
+                        <div class="bg-white/80 p-3 rounded-xl border border-sky-100 shadow-sm">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-lg">📖</span>
+                                <span class="font-bold text-sky-900 text-sm">꾸준한 독서력</span>
+                            </div>
+                            <p class="text-xs text-warmBrown/80">좋은 문장을 수집하고 글의 흐름을 이해하는 힘</p>
+                        </div>
+                        <div class="bg-white/80 p-3 rounded-xl border border-sky-100 shadow-sm">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="text-lg">✍️</span>
+                                <span class="font-bold text-sky-900 text-sm">글쓰기 집중력</span>
+                            </div>
+                            <p class="text-xs text-warmBrown/80">생각해낸 아이디어를 빠르고 진솔하게 글로 써내리기</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 하단 메시지 박스 -->
+            <div class="mt-8 p-5 bg-gradient-to-r from-warmYellow via-pastelOrange to-accentPink rounded-2xl text-center text-warmBrown font-cute text-2xl shadow-inner">
+                "매일 한 걸음씩, 댕댕감자의 이야기가 세상에 퍼질 날을 기대해 주세요!" 💖
+            </div>
+
+            <!-- 푸터 -->
+            <footer class="mt-8 text-center text-xs text-warmBrown/60">
+                &copy; 댕댕감자 자기소개 페이지. All rights reserved.
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
